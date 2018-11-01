@@ -1,0 +1,29 @@
+
+<div class="module1">
+	<div class = "container">
+		<div class="btncreategossip">
+			<%= link_to "Creer un gossip !", new_gossip_path, class: "btn btn-lg btn-primary" %><br>
+				</div>
+
+					<div class= "gossiptext">
+					    <h1>gossip's content here:</h1>
+					</div>
+					    <div class="gossipbody">
+						    <p>...</p>
+						    <p>...</p>
+						    <p>...</p>
+						</div>
+					
+
+
+				<div class="btndeletegossip">
+				<p>
+
+
+			    <a href="<%= gossip_path%>" class= "btn btn-lg btn-danger" data-confirm="are you sure to delete?"
+			    data-method="DELETE">Delete</a>
+
+				</p>
+		</div>
+	</div>
+</div>

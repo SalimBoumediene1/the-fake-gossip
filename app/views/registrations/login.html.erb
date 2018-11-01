@@ -1,0 +1,19 @@
+
+<div class="module1">
+    <%= form_tag do %>
+                <h3 class ="mb-5">Enter your loggin</h3>
+                    <div class="row">
+                        <%= hidden_field_tag 'token'%>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <%= email_field_tag [:email], nil, placeholder: 'email', class: 'form-control' %>
+                    </div>
+                        <div class="form-group">
+                            <%= password_field_tag [:password] , nil, placeholder: 'password', class: 'form-control'%>
+                        </div>
+                        <div class="form-group center">
+                            <div><%= submit_tag 'Save' , class: "btn btn-primary mb-5"%>
+
+                    </div>
+    <% end %>
+</div>

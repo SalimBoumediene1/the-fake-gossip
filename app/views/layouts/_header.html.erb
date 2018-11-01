@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div  class="backgroundgerenal">
+  <div class="topnav" id="myTopnav">
+    <a href="<%= login_path %>" class="active">Co to Gossip</a>
+    <a class="#gossips" href="/">Home/Gossips <span class="sr-only">(current)</span></a>
+    <a class="#signin" href="<%= new_registration_path %>">Sign In</a>
+    <div class="dropdown">
+      <button class="dropbtn">About Us 
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">Salim</a>
+        <a href="#">Khalil</a>
+        <a href="#">Kenadi</a>
+      </div>
+    </div> 
+    <a class="#about" href="<%= gossip_index_path %>">Gossips</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+  <div class="img_gossip">
+  <%= image_tag "gossipsplash.png" %>
+  </div>
+</div>
+
+<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+  <p></p>
+</div>
+    <!-- Header -->
+
+    <header class="welcenter" style="padding:64px 16px">
+      <h1>Welcome to the gossip fake news</h1>
+    </header>
+    <div class="welcenter">
+    <p>"The whole world is hidding behind the truth. Nearly the truth is behind a fake news"</p>
+  </div>
+  <div class="welcenter" style="padding-bottom: 128px">
+      <p><i>Leowalth De Fapuzhiao</i></p>
+    </div>
+
+</body>
+
+
+
+</html>
